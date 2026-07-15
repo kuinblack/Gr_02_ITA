@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+
+    <!-- ===================================================== -->
+    <!-- DEFINITIONS (SERVLETS) -->
+    <!-- ===================================================== -->
+    
+    <!-- WELCOME & MODULE -->
+    <servlet>
+        <servlet-name>ModuleViewServlet</servlet-name>
+        <servlet-class>controller.ModuleViewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StudentQuestionListServlet</servlet-name>
+        <servlet-class>controller.StudentQuestionListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StudentQuestionPracticeServlet</servlet-name>
+        <servlet-class>controller.StudentQuestionPracticeServlet</servlet-class>
+    </servlet>
+
+    <!-- AUTH -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GoogleLoginServlet</servlet-name>
+        <servlet-class>controller.GoogleLoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>controller.LogoutServlet</servlet-class>
+    </servlet>
+
+    <!-- DASHBOARD -->
+    <servlet>
+        <servlet-name>StudentDashboardServlet</servlet-name>
+        <servlet-class>controller.StudentDashboardServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StudentLibraryServlet</servlet-name>
+        <servlet-class>controller.StudentLibraryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PersonalProgressServlet</servlet-name>
+        <servlet-class>controller.PersonalProgressServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SMEDashboardServlet</servlet-name>
+        <servlet-class>controller.SMEDashboardServlet</servlet-class>
+    </servlet>
+
+    <!-- COURSE -->
+    <servlet>
+        <servlet-name>CourseListServlet</servlet-name>
+        <servlet-class>controller.CourseListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CourseStructureServlet</servlet-name>
+        <servlet-class>controller.CourseStructureServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CourseViewServlet</servlet-name>
+        <servlet-class>controller.CourseViewServlet</servlet-class>
+    </servlet>
+
+    <!-- LESSON -->
+    <servlet>
+        <servlet-name>LessonListServlet</servlet-name>
+        <servlet-class>controller.LessonListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LessonEditorServlet</servlet-name>
+        <servlet-class>controller.LessonEditorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LessonViewServlet</servlet-name>
+        <servlet-class>controller.LessonViewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LessonProgressServlet</servlet-name>
+        <servlet-class>controller.LessonProgressServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LessonTextExtractServlet</servlet-name>
+        <servlet-class>controller.LessonTextExtractServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AILessonServlet</servlet-name>
+        <servlet-class>controller.AILessonServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AILessonStagingServlet</servlet-name>
+        <servlet-class>controller.AILessonStagingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AILessonActionServlet</servlet-name>
+        <servlet-class>controller.AILessonActionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AIDraftQueueServlet</servlet-name>
+        <servlet-class>controller.AIDraftQueueServlet</servlet-class>
+    </servlet>
+
+    <!-- FLASHCARD -->
+    <servlet>
+        <servlet-name>FlashcardLibraryServlet</servlet-name>
+        <servlet-class>controller.FlashcardLibraryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FlashcardEditorServlet</servlet-name>
+        <servlet-class>controller.FlashcardEditorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FlashcardPracticeServlet</servlet-name>
+        <servlet-class>controller.FlashcardPracticeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FlashcardViewServlet</servlet-name>
+        <servlet-class>controller.FlashcardViewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AIFlashcardStagingServlet</servlet-name>
+        <servlet-class>controller.AIFlashcardStagingServlet</servlet-class>
+    </servlet>
+
+    <!-- ASSIGNMENT SME -->
+    <servlet>
+        <servlet-name>AssignmentListServlet</servlet-name>
+        <servlet-class>controller.AssignmentListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AssignmentDetailServlet</servlet-name>
+        <servlet-class>controller.AssignmentDetailServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AssignmentSubmissionsServlet</servlet-name>
+        <servlet-class>controller.AssignmentSubmissionsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AssignmentResultsServlet</servlet-name>
+        <servlet-class>controller.AssignmentResultsServlet</servlet-class>
+    </servlet>
+
+    <!-- ASSIGNMENT STUDENT -->
+    <servlet>
+        <servlet-name>AssignmentLibraryServlet</servlet-name>
+        <servlet-class>controller.AssignmentLibraryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AssignmentSubmitServlet</servlet-name>
+        <servlet-class>controller.AssignmentSubmitServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AssignmentResultServlet</servlet-name>
+        <servlet-class>controller.AssignmentResultServlet</servlet-class>
+    </servlet>
+
+    <!-- QUESTION -->
+    <servlet>
+        <servlet-name>QuestionBankServlet</servlet-name>
+        <servlet-class>controller.QuestionBankServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>QuestionDetailServlet</servlet-name>
+        <servlet-class>controller.QuestionDetailServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>QuestionImportServlet</servlet-name>
+        <servlet-class>controller.QuestionImportServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AIQuestionStagingServlet</servlet-name>
+        <servlet-class>controller.AIQuestionStagingServlet</servlet-class>
+    </servlet>
+
+    <!-- ===================================================== -->
+    <!-- MAPPINGS (URL PATTERNS) -->
+    <!-- ===================================================== -->
+    
+    <!-- WELCOME & MODULE -->
+    <servlet-mapping>
+        <servlet-name>ModuleViewServlet</servlet-name>
+        <url-pattern>/moduleview</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentQuestionListServlet</servlet-name>
+        <url-pattern>/studentquestionlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentQuestionPracticeServlet</servlet-name>
+        <url-pattern>/studentquestionpractice</url-pattern>
+    </servlet-mapping>
+
+    <!-- AUTH -->
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GoogleLoginServlet</servlet-name>
+        <url-pattern>/googlelogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- DASHBOARD -->
+    <servlet-mapping>
+        <servlet-name>StudentDashboardServlet</servlet-name>
+        <url-pattern>/studentdashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentLibraryServlet</servlet-name>
+        <url-pattern>/studentlibrary</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PersonalProgressServlet</servlet-name>
+        <url-pattern>/personalprogress</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SMEDashboardServlet</servlet-name>
+        <url-pattern>/smedashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- COURSE -->
+    <servlet-mapping>
+        <servlet-name>CourseListServlet</servlet-name>
+        <url-pattern>/courselist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CourseStructureServlet</servlet-name>
+        <url-pattern>/coursestructure</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CourseViewServlet</servlet-name>
+        <url-pattern>/courseview</url-pattern>
+    </servlet-mapping>
+
+    <!-- LESSON -->
+    <servlet-mapping>
+        <servlet-name>LessonListServlet</servlet-name>
+        <url-pattern>/lessonlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LessonEditorServlet</servlet-name>
+        <url-pattern>/lessoneditor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LessonViewServlet</servlet-name>
+        <url-pattern>/lessonview</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LessonProgressServlet</servlet-name>
+        <url-pattern>/lessonprogress</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LessonTextExtractServlet</servlet-name>
+        <url-pattern>/lessontextextract</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AILessonServlet</servlet-name>
+        <url-pattern>/ailesson</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AILessonStagingServlet</servlet-name>
+        <url-pattern>/ailessonstaging</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AILessonActionServlet</servlet-name>
+        <url-pattern>/ailessonaction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AIDraftQueueServlet</servlet-name>
+        <url-pattern>/aidrafts</url-pattern>
+    </servlet-mapping>
+
+    <!-- FLASHCARD -->
+    <servlet-mapping>
+        <servlet-name>FlashcardLibraryServlet</servlet-name>
+        <url-pattern>/flashcardlibrary</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FlashcardEditorServlet</servlet-name>
+        <url-pattern>/flashcardeditor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FlashcardPracticeServlet</servlet-name>
+        <url-pattern>/flashcard/practice</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FlashcardViewServlet</servlet-name>
+        <url-pattern>/flashcardview</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AIFlashcardStagingServlet</servlet-name>
+        <url-pattern>/aiflashcardstaging</url-pattern>
+    </servlet-mapping>
+
+    <!-- ASSIGNMENT SME -->
+    <servlet-mapping>
+        <servlet-name>AssignmentListServlet</servlet-name>
+        <url-pattern>/assignmentlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AssignmentDetailServlet</servlet-name>
+        <url-pattern>/assignmentdetail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AssignmentSubmissionsServlet</servlet-name>
+        <url-pattern>/assignmentsubmissions</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AssignmentResultsServlet</servlet-name>
+        <url-pattern>/assignmentresults</url-pattern>
+    </servlet-mapping>
+
+    <!-- ASSIGNMENT STUDENT -->
+    <servlet-mapping>
+        <servlet-name>AssignmentLibraryServlet</servlet-name>
+        <url-pattern>/assignmentlibrary</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AssignmentSubmitServlet</servlet-name>
+        <url-pattern>/assignmentsubmit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AssignmentResultServlet</servlet-name>
+        <url-pattern>/assignmentresult</url-pattern>
+    </servlet-mapping>
+
+    <!-- QUESTION -->
+    <servlet-mapping>
+        <servlet-name>QuestionBankServlet</servlet-name>
+        <url-pattern>/questionbank</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuestionDetailServlet</servlet-name>
+        <url-pattern>/questiondetail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuestionImportServlet</servlet-name>
+        <url-pattern>/questionimport</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AIQuestionStagingServlet</servlet-name>
+        <url-pattern>/aiquestionstaging</url-pattern>
+    </servlet-mapping>
+
+    <!-- ===================================================== -->
+    <!-- WELCOME FILE LIST -->
+    <!-- ===================================================== -->
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
